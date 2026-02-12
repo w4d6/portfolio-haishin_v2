@@ -23,6 +23,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Remove non-site files
+        run: |
+          rm -rf node_modules .git .env .gitignore
+          rm -f design-prompt.yaml nanobanana_api_usage.md site-structure.md
+          rm -f generate-images.mjs package.json package-lock.json
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

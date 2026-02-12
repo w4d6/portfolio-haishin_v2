@@ -57,6 +57,26 @@
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* --- Skip Link --- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 8px 24px;
+  border-radius: var(--radius-pill);
+  z-index: 200;
+  font-size: 14px;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: var(--space-sm);
+  color: var(--color-text-inverse);
+}
+
 /* --- Reset & Base --- */
 *,
 *::before,
@@ -97,6 +117,19 @@ a {
 
 a:hover {
   color: var(--color-primary);
+}
+
+/* --- Focus Styles (Keyboard Navigation) --- */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+.btn:focus-visible,
+.card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* --- Typography --- */
@@ -425,6 +458,20 @@ section {
   letter-spacing: 0.05em;
 }
 
+.about-image {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.section-divider--left {
+  margin: 0 0 var(--space-lg);
+}
+
+/* --- Skills Section --- */
+.skills {
+  background: var(--color-bg-tertiary);
+}
+
 /* --- Skills / Tech Stack --- */
 .skills-grid {
   display: flex;
@@ -437,7 +484,7 @@ section {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
-  background: var(--color-bg-secondary);
+  background: var(--color-bg-primary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-pill);
   padding: 8px 20px;
@@ -575,6 +622,7 @@ section {
 }
 
 .modal-content {
+  position: relative;
   background: var(--color-modal-bg);
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
@@ -585,6 +633,21 @@ section {
   box-shadow: var(--shadow-md);
   transform: scale(0.95);
   transition: transform var(--transition-smooth);
+}
+
+.modal-title {
+  margin-bottom: var(--space-sm);
+}
+
+.modal-description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.modal-techs {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
 }
 
 .modal-overlay.active .modal-content {
@@ -766,5 +829,26 @@ section {
 
   .hero-content {
     padding: 0 var(--space-md);
+  }
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .pixel-star {
+    animation: none;
   }
 }
