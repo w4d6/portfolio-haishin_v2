@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Developer Portfolio</title>
+  <meta name="description" content="AI開発者のポートフォリオサイト - クリエイティブなAI開発プロジェクトのショーケース">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Press+Start+2P&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="src/styles/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦄</text></svg>">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- Navigation -->
+  <!-- ============================================================ -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        Portfolio <span class="pixel-accent">★</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================ -->
+  <!-- Hero Section - "Game Start" -->
+  <!-- ============================================================ -->
+  <section class="hero" id="hero">
+    <img src="image/hero-bg.png" alt="Retro JRPG pixel art hero" class="hero-bg" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="pixel-stars"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="pixel-icon">♦</span>
+        AI Developer &amp; Creative Technologist
+      </div>
+      <h1>AIの力で、<br>クリエイティブを<br>もっと自由に。</h1>
+      <p>AI開発を通じて、新しい体験とプロダクトを生み出しています。<br>ポートフォリオをご覧ください。</p>
+      <div class="hero-cta">
+        <a href="#works" class="btn btn-primary">Works を見る</a>
+        <a href="#contact" class="btn btn-secondary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- Works / Portfolio Gallery -->
+  <!-- ============================================================ -->
+  <section class="works" id="works">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-divider"></div>
+        <h2>Works</h2>
+        <p>AI開発プロジェクトの実績をご紹介します</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <div class="card fade-in fade-in-delay-1" data-modal>
+          <div class="card-image">
+            <img src="image/placeholder_1.webp" alt="Project 1" loading="lazy">
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <span class="badge card-badge">AI App</span>
+            <h3 class="card-title">AIチャットボットUI</h3>
+            <p class="card-description">自然言語処理を活用した対話型AIインターフェースの設計と実装</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tech">Python</span>
+            <span class="card-tech">React</span>
+            <span class="card-tech">OpenAI</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card fade-in fade-in-delay-2" data-modal>
+          <div class="card-image">
+            <img src="image/placeholder_2.webp" alt="Project 2" loading="lazy">
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <span class="badge card-badge">Generative AI</span>
+            <h3 class="card-title">画像生成ダッシュボード</h3>
+            <p class="card-description">AI画像生成モデルを統合したクリエイティブツールのダッシュボード</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tech">Next.js</span>
+            <span class="card-tech">Stable Diffusion</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card fade-in fade-in-delay-3" data-modal>
+          <div class="card-image">
+            <img src="image/placeholder_3.webp" alt="Project 3" loading="lazy">
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <span class="badge card-badge">Data Viz</span>
+            <h3 class="card-title">データ分析プラットフォーム</h3>
+            <p class="card-description">機械学習による予測分析とインタラクティブなデータ可視化</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tech">Python</span>
+            <span class="card-tech">D3.js</span>
+            <span class="card-tech">TensorFlow</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card fade-in fade-in-delay-1" data-modal>
+          <div class="card-image">
+            <img src="image/placeholder_4.webp" alt="Project 4" loading="lazy">
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <span class="badge card-badge">Automation</span>
+            <h3 class="card-title">ワークフロー自動化ツール</h3>
+            <p class="card-description">AIエージェントによるタスク自動化と効率的なワークフロー構築</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tech">Node.js</span>
+            <span class="card-tech">Claude API</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card fade-in fade-in-delay-2" data-modal>
+          <div class="card-image">
+            <img src="image/placeholder_5.webp" alt="Project 5" loading="lazy">
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <span class="badge card-badge">Web App</span>
+            <h3 class="card-title">AIコンテンツ管理システム</h3>
+            <p class="card-description">自動タグ付けと推薦機能を備えたコンテンツ管理プラットフォーム</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tech">TypeScript</span>
+            <span class="card-tech">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card fade-in fade-in-delay-3" data-modal>
+          <div class="card-image">
+            <img src="image/placeholder_6.webp" alt="Project 6" loading="lazy">
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <span class="badge card-badge">Creative</span>
+            <h3 class="card-title">AIアートジェネレーター</h3>
+            <p class="card-description">テキストプロンプトからオリジナルアートを生成するWebアプリケーション</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tech">React</span>
+            <span class="card-tech">fal.ai</span>
+            <span class="card-tech">WebGL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- Skills & Tech Stack -->
+  <!-- ============================================================ -->
+  <section class="skills" id="skills" style="background: var(--color-bg-tertiary);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-divider"></div>
+        <h2>Skills</h2>
+        <p>使用している技術スタック</p>
+      </div>
+
+      <div class="skills-grid fade-in">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">React / Next.js</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">OpenAI API</span>
+        <span class="skill-tag">Claude API</span>
+        <span class="skill-tag">Stable Diffusion</span>
+        <span class="skill-tag">LangChain</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">GCP / Vertex AI</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Git / GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- About -->
+  <!-- ============================================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-text fade-in">
+          <div class="section-divider" style="margin: 0 0 var(--space-lg);"></div>
+          <h2>About</h2>
+          <p>
+            AIとクリエイティブの交差点で活動する開発者です。
+            最新のAI技術を活用して、人々の創造性を拡張するプロダクトを
+            設計・開発しています。
+          </p>
+          <p>
+            テクノロジーの力で「つくる」をもっと身近に。
+            それが私の開発哲学です。
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">AI</span>
+              <span class="stat-label">Focused</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual fade-in">
+          <img src="image/bg-pattern.png" alt="Decorative pixel art pattern" style="border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- Contact / CTA -->
+  <!-- ============================================================ -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="fade-in">
+        <div class="section-divider"></div>
+        <h2>Let's Connect</h2>
+        <p>プロジェクトのご相談やコラボレーションのお誘い、お気軽にどうぞ。</p>
+        <div class="cta-buttons">
+          <a href="https://github.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="mailto:hello@example.com" class="btn btn-secondary">
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- Footer -->
+  <!-- ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2026 AI Developer Portfolio. All rights reserved.</p>
+      <span class="footer-pixel">★ THANK YOU FOR PLAYING ★</span>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- Modal / Lightbox -->
+  <!-- ============================================================ -->
+  <div class="modal-overlay">
+    <div class="modal-content" style="position: relative;">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <img class="modal-image" src="" alt="Project detail">
+      <h3 class="modal-title" style="margin-bottom: var(--space-sm);"></h3>
+      <p class="modal-description" style="color: var(--color-text-secondary); margin-bottom: var(--space-md);"></p>
+      <div class="modal-techs" style="display: flex; gap: var(--space-sm); flex-wrap: wrap;"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
