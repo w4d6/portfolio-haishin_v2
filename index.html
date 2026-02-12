@@ -6,10 +6,16 @@
   <title>AI Developer Portfolio</title>
   <meta name="description" content="AI開発者のポートフォリオサイト - クリエイティブなAI開発プロジェクトのショーケース">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Developer Portfolio">
+  <meta property="og:description" content="AI開発者のポートフォリオサイト - クリエイティブなAI開発プロジェクトのショーケース">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="image/hero-bg.png">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Press+Start+2P&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="src/styles/main.css">
@@ -19,10 +25,13 @@
 </head>
 <body>
 
+  <!-- Skip to content -->
+  <a href="#works" class="skip-link">Skip to content</a>
+
   <!-- ============================================================ -->
   <!-- Navigation -->
   <!-- ============================================================ -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="#" class="nav-logo">
         Portfolio <span class="pixel-accent">★</span>
@@ -70,9 +79,9 @@
 
       <div class="portfolio-grid">
         <!-- Card 1 -->
-        <div class="card fade-in fade-in-delay-1" data-modal>
+        <div class="card fade-in fade-in-delay-1" data-modal role="button" tabindex="0">
           <div class="card-image">
-            <img src="image/placeholder_1.webp" alt="Project 1" loading="lazy">
+            <img src="image/placeholder_1.webp" alt="AIチャットボットUIのスクリーンショット" loading="lazy">
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">
@@ -88,9 +97,9 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="card fade-in fade-in-delay-2" data-modal>
+        <div class="card fade-in fade-in-delay-2" data-modal role="button" tabindex="0">
           <div class="card-image">
-            <img src="image/placeholder_2.webp" alt="Project 2" loading="lazy">
+            <img src="image/placeholder_2.webp" alt="画像生成ダッシュボードのスクリーンショット" loading="lazy">
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">
@@ -105,9 +114,9 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="card fade-in fade-in-delay-3" data-modal>
+        <div class="card fade-in fade-in-delay-3" data-modal role="button" tabindex="0">
           <div class="card-image">
-            <img src="image/placeholder_3.webp" alt="Project 3" loading="lazy">
+            <img src="image/placeholder_3.webp" alt="データ分析プラットフォームのスクリーンショット" loading="lazy">
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">
@@ -123,9 +132,9 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="card fade-in fade-in-delay-1" data-modal>
+        <div class="card fade-in fade-in-delay-1" data-modal role="button" tabindex="0">
           <div class="card-image">
-            <img src="image/placeholder_4.webp" alt="Project 4" loading="lazy">
+            <img src="image/placeholder_4.webp" alt="ワークフロー自動化ツールのスクリーンショット" loading="lazy">
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">
@@ -140,9 +149,9 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="card fade-in fade-in-delay-2" data-modal>
+        <div class="card fade-in fade-in-delay-2" data-modal role="button" tabindex="0">
           <div class="card-image">
-            <img src="image/placeholder_5.webp" alt="Project 5" loading="lazy">
+            <img src="image/placeholder_5.webp" alt="AIコンテンツ管理システムのスクリーンショット" loading="lazy">
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">
@@ -157,9 +166,9 @@
         </div>
 
         <!-- Card 6 -->
-        <div class="card fade-in fade-in-delay-3" data-modal>
+        <div class="card fade-in fade-in-delay-3" data-modal role="button" tabindex="0">
           <div class="card-image">
-            <img src="image/placeholder_6.webp" alt="Project 6" loading="lazy">
+            <img src="image/placeholder_6.webp" alt="AIアートジェネレーターのスクリーンショット" loading="lazy">
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">
@@ -180,7 +189,7 @@
   <!-- ============================================================ -->
   <!-- Skills & Tech Stack -->
   <!-- ============================================================ -->
-  <section class="skills" id="skills" style="background: var(--color-bg-tertiary);">
+  <section class="skills" id="skills">
     <div class="container">
       <div class="section-header fade-in">
         <div class="section-divider"></div>
@@ -215,7 +224,7 @@
     <div class="container">
       <div class="about-inner">
         <div class="about-text fade-in">
-          <div class="section-divider" style="margin: 0 0 var(--space-lg);"></div>
+          <div class="section-divider section-divider--left"></div>
           <h2>About</h2>
           <p>
             AIとクリエイティブの交差点で活動する開発者です。
@@ -242,7 +251,7 @@
           </div>
         </div>
         <div class="about-visual fade-in">
-          <img src="image/bg-pattern.png" alt="Decorative pixel art pattern" style="border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+          <img src="image/bg-pattern.png" alt="Decorative pixel art pattern" class="about-image">
         </div>
       </div>
     </div>
@@ -282,13 +291,13 @@
   <!-- ============================================================ -->
   <!-- Modal / Lightbox -->
   <!-- ============================================================ -->
-  <div class="modal-overlay">
-    <div class="modal-content" style="position: relative;">
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project detail">
+    <div class="modal-content">
       <button class="modal-close" aria-label="Close modal">&times;</button>
       <img class="modal-image" src="" alt="Project detail">
-      <h3 class="modal-title" style="margin-bottom: var(--space-sm);"></h3>
-      <p class="modal-description" style="color: var(--color-text-secondary); margin-bottom: var(--space-md);"></p>
-      <div class="modal-techs" style="display: flex; gap: var(--space-sm); flex-wrap: wrap;"></div>
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+      <div class="modal-techs"></div>
     </div>
   </div>
 
